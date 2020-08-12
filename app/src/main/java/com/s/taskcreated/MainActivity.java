@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 dynamiclist.add(Integer.valueOf(binding.editTxt.getText().toString()));
-                binding.txtitem.setText("Item list" + dynamiclist.toString());
+                binding.txtitem.setText("Added Item list" + dynamiclist.toString());
                 binding.editTxt.setText("");
 
             }
@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
         }
         prev = dynamiclist.size();
 
-        binding.textShp.setText(String.format("Ship Size - %d", dynamiclist.size()));
-        binding.print.setText("Ship Values -" + dynamiclist.toString());
+        binding.textShp.setText(String.format("Item Size - %d", dynamiclist.size()));
+        binding.print.setText("Item Values -" + dynamiclist.toString());
 
 
         for (int m = 0; m < day; m++) {
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (prev == dynamiclist.size()) {
-                binding.txtremain.setText("Ships Day -" + day + " \n Remaining Ships List -" + dynamiclist.toString());
+                binding.txtremain.setText("Ships Day -" + day + " \n Remaining Item List -" + dynamiclist.toString());
                 day = 1;
                 dynamiclist.clear();
                 break;

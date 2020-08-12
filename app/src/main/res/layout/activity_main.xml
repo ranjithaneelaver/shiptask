@@ -11,14 +11,14 @@
         tools:context=".MainActivity">
 
         <TextView
+            android:layout_marginLeft="20dp"
             android:id="@+id/text_shp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:textStyle="normal"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -28,10 +28,9 @@
             android:text="Hello World!"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
-            android:textStyle="bold"
-
+            android:textStyle="normal"
+            android:layout_marginLeft="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_shp" />
 
         <TextView
@@ -41,10 +40,9 @@
             android:text="Hello World!"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
-            android:textStyle="bold"
-
+            android:textStyle="normal"
+            android:layout_marginLeft="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/print" />
 
         <TextView
@@ -70,25 +68,27 @@
             android:inputType="number"
             android:textColor="@color/colorPrimary"
             android:textSize="20dp"
-            android:textStyle="bold"
+            android:textStyle="normal"
+            app:layout_constraintRight_toLeftOf="@+id/add"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintLeft_toRightOf="@+id/add"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtdyn" />
 
         <Button
             android:id="@+id/add"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
             android:background="@android:color/white"
             android:text="Add Item"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:textStyle="normal"
+            android:gravity="center"
 
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintLeft_toRightOf="@+id/edit_txt"
+
             app:layout_constraintTop_toBottomOf="@+id/txtdyn" />
 
         <!-- <EditText
@@ -117,7 +117,7 @@
             android:inputType="number"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:textStyle="normal"
             android:layout_marginBottom="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -130,9 +130,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit List"
+            android:background="@android:color/white"
             android:textColor="@color/colorPrimary"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textSize="17sp"
+            android:padding="10dp"
+            android:textStyle="normal"
 
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
